@@ -13,10 +13,12 @@ html {
     --line-color:hsl(215, 32%, 27%);
     --view-color:hsl(178, 100%, 50%);
     --primary-color:hsl(215, 51%, 70%);
+    --white-color:hsl(0, 0%, 100%);
 }
 
 p {
     font-size: 1.8rem;
+    color:var(--primary-color);
 }
 
 /* BODY STYLES */
@@ -52,6 +54,21 @@ body {
     left:50%;
     display:none;
 }
+
+/* HEADER TEXT STYLES */
+.header-text {
+    margin:1.8rem 0;
+}
+
+.header-text h1 {
+    color:var(--white-color);
+}
+
+.header-text p {
+    font-weight: 300;
+    color:var(--primary-color);
+    margin:1.8rem 0;
+}
 /* FIRST ICON GROUP STYLES */
 .icons-group {
     display:flex;
@@ -71,10 +88,17 @@ body {
 
 .etheruem-icon {
     flex:1;
-
 }
+
+.etheruem-icon span {
+    color:var(--view-color);
+}
+
 .clock-icon {
     flex:1;
+}
+.clock-icon span {
+    color:var(--primary-color);
 }
 
 /* AUTHOR AVATAR STYLES */
@@ -91,5 +115,5 @@ body {
 }
 
 .author-name {
-    color:var(--view-color);
+    color:var(--white-color);
 }
