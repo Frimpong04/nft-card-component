@@ -61,6 +61,7 @@ body {
 }
 
 .header-text h1 {
+    font-weight: 400;
     color:var(--white-color);
 }
 
@@ -73,6 +74,7 @@ body {
 .icons-group {
     display:flex;
     margin:1.8rem 0;
+    flex-wrap:wrap;
 }
 
 .icons-group span {
@@ -87,7 +89,7 @@ body {
 }
 
 .etheruem-icon {
-    flex:1;
+    flex:1 1 10rem;
 }
 
 .etheruem-icon span {
@@ -95,10 +97,14 @@ body {
 }
 
 .clock-icon {
-    flex:1;
+    flex:1 1 10rem;
 }
 .clock-icon span {
     color:var(--primary-color);
+}
+/* LINE STYLES */
+hr {
+    color:var(--line-color);
 }
 
 /* AUTHOR AVATAR STYLES */
@@ -109,11 +115,24 @@ body {
 }
 
 .avatar {
-    width:6rem;
-    height:6rem;
+    width:5rem;
+    height:5rem;
     margin-right:1.8rem;
+    border:2px solid var(--white-color);
+    border-radius:50%;
 }
 
 .author-name {
     color:var(--white-color);
+}
+
+/* MEDIA QUERIES  */
+@media only screen and (max-width:375px) {
+    html{
+        font-size:45%;
+    }
+
+    .card-holder {
+        width:80%;
+    }
 }
