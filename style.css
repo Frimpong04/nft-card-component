@@ -107,7 +107,10 @@ body {
 }
 /* LINE STYLES */
 hr {
-    color:var(--line-color);
+    background-color:var(--line-color);
+    height:1.9px;
+    border:0 none;
+    margin:2rem 0;
 }
 
 /* AUTHOR AVATAR STYLES */
@@ -118,10 +121,10 @@ hr {
 }
 
 .avatar {
-    width:5rem;
-    height:5rem;
+    width:4rem;
+    height:4rem;
     margin-right:1.8rem;
-    border:2px solid var(--white-color);
+    border:1px solid var(--white-color);
     border-radius:50%;
 }
 
